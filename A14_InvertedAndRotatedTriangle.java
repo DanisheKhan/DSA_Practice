@@ -4,7 +4,3 @@ public class A14_InvertedAndRotatedTriangle {
     
   }
 }
-
-
-
-

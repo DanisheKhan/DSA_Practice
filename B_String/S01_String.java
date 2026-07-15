@@ -20,10 +20,10 @@ public class S01_String {
     // String one = "danish";
     // String two = new String("danish");
 
-    // Scanner sc = new Scanner(System.in);
-    // String name;
-    // name = sc.nextLine();
-    // System.out.println(name);
+    Scanner sc = new Scanner(System.in);
+    String name;
+    name = sc.nextLine();
+    System.out.println(name);
 
     // String myName="Danish Khan";
     // System.out.println(myName.length());

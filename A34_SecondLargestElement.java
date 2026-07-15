@@ -1,22 +1,22 @@
 public class A34_SecondLargestElement {
-  public static int SecondLargestElement(int[] elements) {
+  public static int getSecondLargest(int[] elements) {
     int largest = Integer.MIN_VALUE;
     int secondLargest = Integer.MIN_VALUE;
 
     for (int i = 0; i < elements.length; i++) {
-      if (largest < elements[i]) {
+      if (elements[i] > largest) {
         secondLargest = largest;
         largest = elements[i];
-      } else if (elements[i] > secondLargest) {
+      } else if (elements[i] > secondLargest && elements[i] != largest) {
         secondLargest = elements[i];
       }
     }
 
-    return secondLargest;
+    return secondLargest == Integer.MIN_VALUE ? -1 : secondLargest;
   }
 
   public static void main(String[] args) {
-    int[] elements = { 1, 24, 33, 45, 66, 77, 70,71 };
-    System.out.println(SecondLargestElement(elements));
+    int[] elements = { 10, 5, 10 };
+    System.out.println(getSecondLargest(elements));
   }
 }

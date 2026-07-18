@@ -17,7 +17,7 @@ public class A01_Hashmap {
     hm.put("yasmin", 4);
 
     // ! print
-    // System.out.println(hm);
+    System.out.println(hm);
 
     // ! get the vaule
     // System.out.println(hm.get("danish"));
@@ -41,12 +41,12 @@ public class A01_Hashmap {
     // System.out.println(hm);
 
     // ! iteration of hashmap
-    Set<String> keys = hm.keySet();
-    System.out.println(keys);
+    // Set<String> keys = hm.keySet();
+    // System.out.println(keys);
 
-    for (String key : keys) {
-      System.out.println("Key = "+key+", and Value = "+ hm.get(key));
-    }
+    // for (String key : keys) {
+    //   System.out.println("Key = "+key+", and Value = "+ hm.get(key));
+    // }
   }
 
 }

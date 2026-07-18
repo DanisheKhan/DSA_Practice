@@ -11,5 +11,21 @@ public class A02_LinkedHashMap {
 
     System.out.println(lhm);
 
+    System.out.println(lhm.containsKey("Biryani"));
+
+    System.out.println(lhm.get("Biryani"));
+
+    System.out.println(lhm.remove("Pulao"));
+
+    System.out.println(lhm.size());
+
+    System.out.println(lhm.isEmpty());
+
+    Set<String> key = lhm.keySet();
+
+    for (String string : key) {
+      System.out.println(string);
+    }
+
   }
 }
